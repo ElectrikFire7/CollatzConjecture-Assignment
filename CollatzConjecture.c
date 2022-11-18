@@ -41,6 +41,7 @@ int main()
 				printf("%d\n",k);
 			}
 		
+			printf("Value of k in child process = %d\n", k);
 			printf("Child process (%d) is done.\n", pid);
 		}
 		else
@@ -49,6 +50,7 @@ int main()
 			printf("Parent process is waiting on child process...\n");
 			wait();
 			printf("Parent process (%d) is done.\n", pid);
+			printf("Value of k in parent process = %d\n", k);
 		}
 	return 0; 
 }
